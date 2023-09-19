@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const movieRoutes = require('./routes/movies')
 
-
 app.use(express.json());
 app.use(cors());
 
@@ -22,6 +21,7 @@ mongoose.connect(dbURI, { useNewUrlParser: true })
         console.log('unable to connect to database' + err)
     })
 
+//Middleware for every request to the server
 app.use('/', movieRoutes)
 
 //Port to listen
