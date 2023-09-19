@@ -56,3 +56,5 @@ router.get('/movies/:id', async (req, res) => {
 //         res.status(400).json({ message: error.message })
 //     }
 // })
+
+module.exports = router
