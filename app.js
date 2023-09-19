@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const movieRoutes = require('./routes/movies')
 
+
 app.use(express.json());
 app.use(cors());
 
