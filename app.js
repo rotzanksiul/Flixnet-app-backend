@@ -22,7 +22,6 @@ mongoose.connect(dbURI, { useNewUrlParser: true })
         console.log('unable to connect to database' + err)
     })
 
-//Routes Middleware
 app.use('/', movieRoutes)
 
 //Port to listen
