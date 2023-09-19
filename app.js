@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
-const movieRoutes = require('./routes/routes')
+const movieRoutes = require('./routes/movies')
 
 app.use(express.json());
 app.use(cors());
